@@ -21,5 +21,5 @@ Si cambia la versión de AutoFirma, sólo hay que:
  ```
    sudo dpkg -b sources  autofirma-X-gecosY.deb
  ```  
-   (Donde X es la versin de AutoFirma e Y la versión del paquete)
+   (Donde X es la versión de AutoFirma e Y la versión del paquete)
    
