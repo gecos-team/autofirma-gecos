@@ -1,5 +1,12 @@
 #!/bin/sh
-# borramos los ficheros de certificados de los directorios de instalacion
+# borramos los ficheros de certificados de los directorios de instalacion (solo si se purga el paquete)
+
+case "$1" in
+  remove)
+    exit 0
+    ;;
+
+  purge)
 
 if [ -d "/usr/lib/AutoFirma" ];
  then
@@ -25,7 +32,10 @@ do
   done
 done
 
-echo "La aplicación Autofirma ha sido desinstalada"
+echo "Los datos de la aplicación Autofirma han sido eliminados"
 
-exit 0
+    exit 0
+  ;;
+
+esac
 
