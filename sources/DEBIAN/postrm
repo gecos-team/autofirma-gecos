@@ -1,0 +1,26 @@
+#!/bin/sh
+# borramos la carpeta de instalacion con los ficheros que no se han eliminado
+
+if [ -d "/usr/lib/AutoFirma" ];
+ then
+ rm -R /usr/lib/AutoFirma
+fi
+
+certname="AutoFirma ROOT LOCAL"
+
+userdir=$(find /home/ -maxdepth 2 -name ".mozilla") 
+
+for dir in $userdir
+do
+  echo "Eliminando el certificado de AutoFirma en el directorio" $dir
+  for certdb in $(find $userdir/firefox -maxdepth 2 -name "cert8.db")
+  do
+    certdir=$(dirname ${certdb});
+    certutil -D -n "${certname}" -d dbm:${certdir}
+  done
+done
+
+echo "La aplicación Autofirma ha sido desinstalada"
+
+exit 0
+
