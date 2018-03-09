@@ -24,7 +24,7 @@ do
 done
 
 if [ "$1" != "-all" ]; then 
-  if [ -x "/usr/bin/zenity" ]
+  if [ -x "/usr/bin/zenity" ]; then
     zenity --info --title "AutoFirma" --text "El certificado para usar AutoFirma se ha instalado"
   fi
 fi
