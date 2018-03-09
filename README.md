@@ -18,7 +18,8 @@ Si cambia la versión de AutoFirma, sólo hay que:
 * Cambiar el número de versión en sources/DEBIAN/control
 * Generar un nuevo paquete con el comando:
  
+ ```
    sudo dpkg -b sources  autofirma-X-gecosY.deb
-   
+ ```  
    (Donde X es la versin de AutoFirma e Y la versión del paquete)
    
