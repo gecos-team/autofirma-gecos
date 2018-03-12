@@ -23,3 +23,9 @@ Si cambia la versión de AutoFirma, sólo hay que:
  ```  
    (Donde X es la versión de AutoFirma e Y la versión del paquete)
    
+## Cambios respecto al paquete oficial
+
+* Utiliza un procedimiento de instalación ms transparente y ligero, que no requiere Java
+* Agrega al menú una opción para que un usuario pueda reinstalarse fácilmente el certificado de AutoFirma 
+* Agrega al administrador de archivos (Nemo) una opción para firmar documentos con el botón derecho
+* Desinstalación mejorada, sin dejar rastros de configuración
