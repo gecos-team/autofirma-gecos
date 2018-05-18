@@ -16,10 +16,17 @@ fi
 for dir in $userdir
 do
   echo "Actualizando el certificado de AutoFirma en el directorio" $dir
+  echo " Almacenes en formato dbm"
   for certdb in $(find $userdir/firefox -maxdepth 2 -name "cert8.db")
   do
     certdir=$(dirname ${certdb});
     certutil -A -n "${certname}" -t "TCu,Cu,Tu" -i ${certfile} -d dbm:${certdir}
+  done
+  echo " Almacenes en formato sql"
+  for certdb in $(find $userdir/firefox -maxdepth 2 -name "cert9.db")
+  do
+    certdir=$(dirname ${certdb});
+    certutil -A -n "${certname}" -t "TCu,Cu,Tu" -i ${certfile} -d sql:${certdir}
   done
 done
 
