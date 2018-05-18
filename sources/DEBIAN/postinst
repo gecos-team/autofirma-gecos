@@ -43,6 +43,9 @@ openssl ca -batch -config /usr/share/AutoFirma/openssl.cnf -policy signing_polic
 # Exportamos la clave y certificado de localhost a formato pfx 
 openssl pkcs12 -export -out autofirma.pfx -passout pass:654321 -inkey localhost.key -passin file:randomkey.txt  -in localhost.crt  -name "socketautofirmalocal" -certfile AutoFirma.crt 
 
+# Damos permiso de lectura a todos, ya que AutoFirma lo lanza el usuario
+chmod ugo+r autofirma.pfx
+
 # Borramos todos los ficheros generados salvo el certificado de la CA por si hay que agregarlo a nuevos usuarios o nuevos perfiles del navegador
 rm randomkey.txt AutoFirma.key AutoFirma.csr localhost.key localhost.csr localhost.crt
 
