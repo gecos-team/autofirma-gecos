@@ -26,6 +26,7 @@ Si cambia la versión de AutoFirma, sólo hay que:
 ## Cambios respecto al paquete oficial
 
 * Utiliza un procedimiento de instalación ms transparente y ligero, que no requiere Java
-* Agrega al menú una opción para que un usuario pueda reinstalarse fácilmente el certificado de AutoFirma 
+* Instala el certificado de CA en el sistema, no en el almacén de cada usuario
+  (evita errores si se encuentra almacenes de usuario protegidos con clave)
 * Agrega al administrador de archivos (Nemo) una opción para firmar documentos con el botón derecho
 * Desinstalación mejorada, sin dejar rastros de configuración

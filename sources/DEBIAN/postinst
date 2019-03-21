@@ -49,13 +49,14 @@ chmod ugo+r autofirma.pfx
 # Borramos todos los ficheros generados salvo el certificado de la CA por si hay que agregarlo a nuevos usuarios o nuevos perfiles del navegador
 rm randomkey.txt AutoFirma.key AutoFirma.csr localhost.key localhost.csr localhost.crt
 
-# Movemos el certificado de la CA a un sitio seguro para poder agregarlo a los navegadores cuando sea necesario
-mv AutoFirma.crt /usr/share/AutoFirma/
+# Movemos el certificado de la CA al directorio de certificados del sistema
+mv AutoFirma.crt /usr/local/share/ca-certificates/AutoFirma/
 # Movemos el almacén pfx a la ubicación donde lo buscará la aplicación AutoFirma
 mv autofirma.pfx /usr/lib/AutoFirma/
 
-# Agregamos el certificado a todos los perfiles de todos los usuarios
-/usr/bin/AutoFirma-Firefox -all
+# Agregamos el certificado al sistema, de donde lo leerá el navegador si tiene el módulo p11-kit cargado
+# (Mejor que cargarlo el almacén del usuario, que podría estar protegido con una clave que no conocemos)
+update-ca-certificates
 
     echo "La aplicación Autofirma ha sido instalada"
 
