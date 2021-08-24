@@ -25,7 +25,8 @@ Si cambia la versión de AutoFirma, sólo hay que:
    
 ## Cambios respecto al paquete oficial
 
-* Utiliza un procedimiento de instalación ms transparente y ligero, que no requiere Java
+* Utiliza un procedimiento de instalación mas transparente y ligero, que no requiere Java
 * Agrega al menú una opción para que un usuario pueda reinstalarse fácilmente el certificado de AutoFirma 
 * Agrega al administrador de archivos (Nemo) una opción para firmar documentos con el botón derecho
 * Desinstalación mejorada, sin dejar rastros de configuración
+* Corrige el script de lanzamiento de la aplicación Java para mejorar el parseo de parámetros (gracias #vokimon!)
