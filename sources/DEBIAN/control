@@ -2,11 +2,11 @@ Package: autofirma
 Architecture: all
 Section: utils
 Priority: optional
-Depends: openjdk-8-jre | oracle-java8-jre, libnss3-tools,  libnss3 (>= 2:3.26), openssl, ca-certificates, jarwrapper
+Depends: openjdk-11-jre | oracle-java11-jre, libnss3-tools,  libnss3 (>= 2:3.26), openssl, ca-certificates, jarwrapper
 Description: Cliente de Firma Electrónica @firma
  Utilidad para la firma electrónica de documentos 
  independiente del navegador web
-Version: 1.6.1
+Version: 1.7.1
 Maintainer: GECOS Team <gecos@guadalinex.org>
 Installed-Size: 33776
 Homepage: https://administracionelectronica.gob.es/ctt/clienteafirma

@@ -1,22 +1,13 @@
-Descargado desde:
-http://firmaelectronica.gob.es/Home/Descargas.html
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: AutoFirma
+Upstream-Contact: Gobierno de España <soporte.afirma@correo.gob.es>
+Source: http://firmaelectronica.gob.es/Home/Descargas.html
 
-Autor:
+License: GPL-2.0
+ El texto completo de la GNU Public License 2.0 puede leerse en el fichero 
+ `GPL-2.0' en el mismo directorio que este fichero.
 
-    Gobierno de España <soporte.afirma@correo.gob.es>
-
-
-Copyright:
-
-    Copyright (c) 2018 Gobierno de España
-
-
-Licencia:
-
-     AutoFirma se libera con una licencia: GPL versión 2 + y EUPL v1.1.
-
-     Este tipo de licenciamiento ofrece la posibilidad de acogerse a los 
-     derechos que proporcionan una o ambas licencias, a su conveniencia, 
-     siempre que se cumplan las condiciones que cada una de ellas impone.
-
+License: EUPL-1.1
+ El texto completo de la European Union Public Licence 1.1 puede leerse en
+ el fichero `EUPL-1.1' en el mismo directorio que este fichero.
 
