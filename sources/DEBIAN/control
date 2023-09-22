@@ -6,7 +6,7 @@ Depends: openjdk-11-jre | oracle-java11-jre, libnss3-tools,  libnss3 (>= 2:3.26)
 Description: Cliente de Firma Electrónica @firma
  Utilidad para la firma electrónica de documentos 
  independiente del navegador web
-Version: 1.7.1
+Version: 1.8.2
 Maintainer: GECOS Team <gecos@guadalinex.org>
 Installed-Size: 33776
 Homepage: https://administracionelectronica.gob.es/ctt/clienteafirma
